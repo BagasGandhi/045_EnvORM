@@ -13,7 +13,7 @@ app.listen(PORT, () => {
 
 db.sequelize.sync()
     .then((result) => {
-        app.listen(3000, () => {
+        app.listen(PORT, () => {
             console.log(`Server started`);
         })
     })
